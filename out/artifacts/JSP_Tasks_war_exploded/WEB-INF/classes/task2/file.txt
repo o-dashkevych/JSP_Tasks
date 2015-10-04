@@ -1,0 +1,11 @@
+If the image is internal (you want a location relative
+ to your project, or perhaps packaged into your jar),
+do what mad programmer said:
+
+iconX = new ImageIcon(getClass().getResource("/path/imageX.png"))
+
+The path is relative, so path/
+ will be a folder in the same folder as your project (or packaged into your jar).
+
+If you want an external image, simply hand ImageIcon constructor the path (ex. "C:/.../file.png").
+ This isn't recommended though, as it's better to use it as a resource.
