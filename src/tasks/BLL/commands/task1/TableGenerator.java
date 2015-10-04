@@ -1,21 +1,17 @@
 package tasks.BLL.commands.task1;
 
 import tasks.BLL.Command;
-import tasks.BLL.commands.Hello;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.HashMap;
 
 public class TableGenerator implements Command{
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp){
-
+        // TEST COMMENT
         int rows, columns;
         String color;
         try {
